@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS = 1 Aula</title>
+</head>
+<body>
+    <h1>Aula FrontEnd</h1>
+    <link rel="stylesheet" href="figma">
+    <script>
+    // //Quando quero que o usuario clique em OK
+    // window.alert("Olá mundo")
+    // //Quando quero interação direta, pedindo algo do usuario
+    // window.prompt("Digite algo")
+    // //quando quer que o usuario selecione ok ou cancelar
+    // window.confirm("Voce concorda?")
+    //variaveis
+    //var: var nome
+    //let
+    //const
+    // let materia = window.prompt("Qual a sua materia favorita? ")
+    // document.write(`Quer dizer que sua materia favorita é ${materia}? `)
+    // let nota1 = Number(prompt("Qual a sua primeira nota? "))
+    // let nota2 = Number(prompt("Qual a sua segunda nota? "))
+    // let media = (nota1 + nota2) /2
+    // // document.write(`Sua média é de ${media}`)
+    // if(media >=6){
+    //     document.write(`parabens, você foi aprovado com média: ${media}`)
+    // }else{
+    //     document.write(`Sinto muito, vc vai ter que repetir o ano pois tem média: ${media}`)
+    // }
+    //for - quando sei quantas iterações terão
+    for(i=0;i <=10;i++){
+        document.write(`<br> Número ${i}`)
+    }
+    let contador = 10
+    //while - regido pelo condicional
+    while(contador >=0){
+        document.write(`<br> Número caindo: ${contador}`)
+        contador--
+    }
+    //do while - uma iteração obrigatoria e depois a condicional
+    do{
+        document.write(`<br> Número subindo: ${contador+1}`)
+        contador++
+    }while(contador <10)    
+    </script>
+</body>
+</html>
