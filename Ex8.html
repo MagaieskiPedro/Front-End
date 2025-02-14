@@ -8,9 +8,12 @@
 </head>
 <body>
     <script>
-        let peso = window.prompt("Digite o peso")
-        let altura = window.prompt("Digite a altura ")
-        window.alert(`O IMC é ${peso/(altura^2)}`)
+        let ano = window.prompt("Digite um ano")
+        if ((ano%4==0 && ano%100 !=0) || ano%400 ==0){
+            window.alert("O ano é bissexto")
+        }else{
+            window.alert("O ano não é bissexto")
+        }
     </script>
 </body>
 </html>

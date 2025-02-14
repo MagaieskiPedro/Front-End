@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <script>
+        let numero = window.prompt("Digite um numero: ")
+        let resultado = 1;
+        let contador = 1;
+        while(contador<=numero){
+            resultado *= contador;
+            window.alert(`O resultado atual é: ${resultado}`)
+            contador++;
+        }
+        window.alert(`O resultado final é: ${resultado}`)
+    </script>
+</body>
+</html>

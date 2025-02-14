@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <script>
+        gerado = Math.floor(Math.random()*3)
+        let escolha = window.prompt("Digite pedra papel ou tesoura: ")
+        escolha.toLocaleLowerCase()
+        switch(escolha){
+            case "pedra":
+                // apenas para referencia de qual valor pedra vale
+                escolha = 3
+                if(gerado==1){
+                    window.alert("Ganho, pedra vence de tesoura")
+                }else if(gerado==2){
+                    window.alert("Perdeu,pedra perde de Papel")
+                }else if(gerado==3){
+                    window.alert("Empatou")
+                }
+                break;
+            case "papel":
+                // apenas para referencia de qual valor papel vale
+                escolha = 2
+                if(gerado==1){
+                    window.alert("Perdeu, papel perde para tesoura")
+                }else if(gerado==2){
+                    window.alert("Empatou")
+                }else if(gerado==3){
+                    window.alert("Ganhou, papel vence de pedra")
+                }
+                break;
+            case "tesoura":
+                // apenas para referencia de qual valor tesoura vale
+                escolha = 1
+                if(gerado==1){
+                    window.alert("Empatou")
+                }else if(gerado==2){
+                    window.alert("Ganhou,tesoura vence de papel")
+                }else if(gerado==3){
+                    window.alert("Perdeu,tesoura perda para pedra")
+                }
+                break;
+
+        }
+
+    </script>
+</body>
+</html>
