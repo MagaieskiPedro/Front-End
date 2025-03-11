@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="StyleRestaurant.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurante</h1>
+        <div class="container">
+            <label for="prato">Escolha um prato: </label>
+            <select id="prato">
+                <option value="0">Selecione seu prato</option>
+                <option value="52">Macarrão carbonara</option>
+                <option value="50">Fricasse de frango</option>
+                <option value="8">Espetinho de carne</option>
+                <option value="35">Frango a parmegiana</option>
+            </select>
+        </div>
+        <div class="container">
+            <label >Quantidade</label>
+            <input type="number" id="quantidade" min="1" max="3" value="1">
+        </div>
+        <button onclick="CalcularTotal()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="scriptRestaurante.js"></script>
+</body>
+</html>

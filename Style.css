@@ -30,12 +30,12 @@ body{
     padding: 1rem;
     margin: 2rem;
     text-align: center;
-    box-shadow: 0.25em 0.25em 2em gold;
+    box-shadow:  2em gold;
     background-color: white  ;
     border-radius: 3em; 
 }
 .card:hover{
-    box-shadow: 0.25em 0.25em 2em white;
+    box-shadow: 0.25em 0.25em 2em gold;
     background-color: silver;
 }
 .card a{
