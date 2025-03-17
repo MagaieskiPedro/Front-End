@@ -47,25 +47,25 @@ const cedulas = (valor) => {
     let um = 0
     while (valor > 0){
         if(valor%200==0){
-            valor - 200;
+            valor -= 200;
             duzentos += 1;
         }else if(valor%100==0){
-            valor - 100;
+            valor -= 100;
             cem += 1;
         }else if(valor%50==0){
-            valor - 50;
+            valor -= 50;
             cinquenta += 1;
         }else if(valor%20==0){
-            valor - 50;
+            valor -= 50;
             vinte += 1;
         }else if(valor%10==0){
-            valor - 50;
+            valor -= 50;
             dez += 1;
         }else if(valor%5==0){
-            valor - 5;
+            valor -= 5;
             cinco += 1;
         }else if(valor%1==0){
-            valor - 1;
+            valor -= 1;
             um += 1;
         }
     }
@@ -75,7 +75,29 @@ const cedulas = (valor) => {
 }
 // EX 8
 const raizQuad = (numero) => Math.sqrt(numero)
-
+// EX 9
+function salvar(event){
+    event.preventDefault();
+    if (props.nome == ""){
+        alert("campo nome vazio")
+    }else if(props.endereco == ""){
+        alert("campo endereco vazio")
+    }else if(props.sexo == "vazio"){
+        alert("campo sexo vazio")
+    }else if(props.telefone == ""){
+        alert("campo telefone vazio")
+    }else if(props.celular == ""){
+        alert("campo celular vazio")
+    }
+}
+// EX 10
+const impostoRenda = (faixaSalarial) => faixaSalarial*0.4
+// EX 11
+const INSS = (salario,aliquota) => salario*aliquota
+// EX 12
+const jurosCompostos = (valorInicial,tempo) => valorInicial*(1+0.25)**tempo
+// EX 13
+const financiamento = (valorPrincipal,taxa,numeroParcelas) => (valorPrincipal*taxa)/(1-(1+taxa)**-numeroParcelas)
 // Execução
 alert(cedulas(300))
 // Saudar();
