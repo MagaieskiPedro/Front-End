@@ -46,25 +46,25 @@ const cedulas = (valor) => {
     let cinco = 0;
     let um = 0
     while (valor > 0){
-        if(valor%200==0){
+        if(valor/200>=0){
             valor -= 200;
             duzentos += 1;
-        }else if(valor%100==0){
+        }else if(valor/100>=0){
             valor -= 100;
             cem += 1;
-        }else if(valor%50==0){
+        }else if(valor/50>=0){
             valor -= 50;
             cinquenta += 1;
-        }else if(valor%20==0){
+        }else if(valor/20>=0){
             valor -= 50;
             vinte += 1;
-        }else if(valor%10==0){
+        }else if(valor/10>=0){
             valor -= 50;
             dez += 1;
-        }else if(valor%5==0){
+        }else if(valor/5>=0){
             valor -= 5;
             cinco += 1;
-        }else if(valor%1==0){
+        }else if(valor/1>=0){
             valor -= 1;
             um += 1;
         }
@@ -89,6 +89,7 @@ function salvar(event){
     }else if(props.celular == ""){
         alert("campo celular vazio")
     }
+
 }
 // EX 10
 const impostoRenda = (faixaSalarial) => faixaSalarial*0.4
@@ -99,12 +100,22 @@ const jurosCompostos = (valorInicial,tempo) => valorInicial*(1+0.25)**tempo
 // EX 13
 const financiamento = (valorPrincipal,taxa,numeroParcelas) => (valorPrincipal*taxa)/(1-(1+taxa)**-numeroParcelas)
 // Execução
-alert(cedulas(300))
-// Saudar();
-// a = Number(prompt("Informe um valor"));
-// b = Number(prompt("Informe outro valor"));
-// document.writeln(soma(a,b));
+document.writeln(` <p>`)
+document.writeln(`${soma(4,2)} soma <p>`)
+document.writeln(`${subtracao(4,2)} subtração <p>`)
+document.writeln(`${multiplicar(4,2)} multiplicação <p>`)
+document.writeln(`${dividir(4,2)} divisão <p>`)
+document.writeln(`${inverteTexto('texto')} inverte texto <p>`)
+document.writeln(`${separaTexto('texto')} separa texto <p>`)
+document.writeln(`${poderaDirigir(18)} pode tirar carteira? <p>`)
+document.writeln(`${insereNumeros(1,2,3)} embaralha numeros <p>`)
+document.writeln(`${horaParaMin(12)} hora para min <p>`)
+document.writeln(`${cedulas(350)} cedulas para pagamento <p>`)
+document.writeln(`${raizQuad(100)} raiz quadrada <p>`)
+document.writeln(`${salvar()} formulario salvar <p>`)
+document.writeln(`${impostoRenda (100)} imposto de renda <p>`)
+document.writeln(`${INSS(100)} INSS <p>`)
+document.writeln(`${jurosCompostos(100)} juros compostos <p>`)
+document.writeln(`${financiamento(100)} financiamento <p>`)
 
-// texto = prompt("Escreva seu texto");
-// convertido = converteMaiuscula(texto);
-// document.writeln(convertido);
+// Saudar();

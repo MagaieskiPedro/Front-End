@@ -7,6 +7,9 @@ body{
     background-image: repeating-radial-gradient(crimson,black);
     height: 80rem;
 }
+p,h1{
+    color: white;
+}
 .container{
     display: flex;
     flex-direction: column;
