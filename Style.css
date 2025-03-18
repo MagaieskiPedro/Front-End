@@ -6,6 +6,7 @@
 body{
     background-image: repeating-radial-gradient(crimson,black);
     height: 80rem;
+    color: white;
 }
 p,h1{
     color: white;
