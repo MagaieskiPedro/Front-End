@@ -36,7 +36,7 @@ const insereNumeros = (numero1,numero2,numero3) => {
 }
 // EX 6 
 const horaParaMin = (hora) => hora*60
-// EX 7 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TERMINAR ISSO AQUI
+// EX 7
 const cedulas = (valor) => { 
     let duzentos = 0;
     let cem = 0;

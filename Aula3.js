@@ -51,3 +51,43 @@ let livrosC = ['Diario de um banana', 'It a coisa', 'harry potter']
 
 catalogo = [...livrosP,...livrosC]
 document.writeln(`${catalogo} <p> mescla listas`)
+//EX1
+let cincVal = [1,2,3,4,5] 
+let dobro = cincVal.map(n => n*2)
+document.writeln(`${dobro} dobro da lista <p>`)
+//EX2
+let notas = [1,2,3,4,5,6,7,8]
+let total = 0
+for(let valores of notas){
+    total+=valores
+}
+document.writeln(`${total/8} é a média <p>`)
+//EX3
+let valores = []
+let valoresMedia = []
+let media = 0
+for(i=0;i<20;i++){
+    let num = window.prompt("Digite um numero")
+    valores.push(num)
+    media += num
+}
+media = media/20
+for(let valores of valores){
+    if(valores > media){
+        valoresMedia.push(valores)
+    }
+}
+document.writeln(`lista ${valores} media ${media} valores acima media ${valoresMedia} <p>`)
+//EX4
+let parouimpar = []
+for(i=0;i<10;i++){
+    let num = window.prompt("Digite um numero")
+    parouimpar.push(num)
+}
+let filtroPares  = parouimpar.filter(par = (nu) => nu%2 ===0)
+if(filtroPares.length <= 0){
+    document.writeln('todos os numeros são impares <p>')
+}else{
+    document.writeln(`${filtroPares} são os pares <p>` )
+}
+//EX5 terminar
