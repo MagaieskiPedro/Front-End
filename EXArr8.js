@@ -7,5 +7,5 @@ for(i=0;i<6;i++){
     num = num/2
     vetorMeios.push(num)
 }
-document.writeln(`o vetor A é ${vetorInteiros}`)
-document.writeln(`o vetor B é ${vetorMeios}`)
+document.writeln(`<span>o vetor A é ${vetorInteiros}</span>`)
+document.writeln(`<span>o vetor B é ${vetorMeios}</span>`)

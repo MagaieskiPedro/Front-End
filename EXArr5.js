@@ -9,5 +9,5 @@ for(i=0;i<8;i++){
     }
 }
 if(valoresCorretos.length > 0){
-    document.writeln(`todos os numeros entre 100 e 200 são: ${valoresCorretos} <p>` )
+    document.writeln(`<span>todos os numeros entre 100 e 200 são: ${valoresCorretos} </span>` )
 }

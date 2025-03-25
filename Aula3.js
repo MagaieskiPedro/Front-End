@@ -17,37 +17,37 @@ document.writeln(`<p>`)
 
 // inserir no final do array
 vetor.push('う')
-document.writeln(`${vetor} inserir ultimo <p>`)
+document.writeln(`<span>${vetor} inserir ultimo </span>`)
 // inserir no começo do array
 vetor.unshift('あ')
-document.writeln(`${vetor} inserir primeiro <p>`)
+document.writeln(`<span>${vetor} inserir primeiro </span>`)
 // excluir ultimo
 vetor.pop()
-document.writeln(`${vetor} apagar ultimo <p>`)
+document.writeln(`<span>${vetor} apagar ultimo </span>`)
 // excluir primeiro
 vetor.shift()
-document.writeln(`${vetor} apagar primeiro <p>`)
+document.writeln(`<span>${vetor} apagar primeiro </span>`)
 
 //percorrer o Array com o foreach
-vetor.forEach(resultado = (valor) => document.writeln(`${valor} para cada <br>`))
+vetor.forEach(resultado = (valor) => document.writeln(`<span>${valor} para cada </span> <br>`))
 
 let numerosQuadrados =  numeros.map(n => n ** 2)
-document.writeln(`${numerosQuadrados} mapeia numeros ao quadrado <p>`)
+document.writeln(`<span>${numerosQuadrados} mapeia numeros ao quadrado </span>`)
 
 //Map: cria uma copia do array e aplica mudança desejada nele
 let maiusculo = vetor.map(nome => nome.toUpperCase())
-document.writeln(`${maiusculo} mapeia em maiusculo lista <p>`)
+document.writeln(`<span>${maiusculo} mapeia em maiusculo lista </span>`)
 
 // Filter: gera outro array com os valores filtrados
 let numerosPares = numeros.filter(pares = (numero) => numero%2 ===0)
-document.writeln(`${numerosPares} filtra lista <p>`)
+document.writeln(`<span>${numerosPares} filtra lista </span>`)
 
 // find: ele percorre um array original, quando encontra condição ele para de percorrer e retorna esse valor
 let primeiroPar = numeros.find(par = (numero) => numero%2 === 0)
-document.writeln(`${primeiroPar} encontra na lista <p>`)
+document.writeln(`<span>${primeiroPar} encontra na lista </span>`)
 // spread: como junto dois arrays
 let livrosP = ['ler um café e tomar uma poesia','pra vc que teve um dia ruim','extraordinario']
 let livrosC = ['Diario de um banana', 'It a coisa', 'harry potter']
 
 catalogo = [...livrosP,...livrosC]
-document.writeln(`${catalogo} <p> mescla listas`)
+document.writeln(`<span>${catalogo} mescla listas </span>`)

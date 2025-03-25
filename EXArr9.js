@@ -12,6 +12,6 @@ for(i=0;i<5;i++){
     vetorB.push(numB);
     vetorC.push(numB);   
 }
-document.writeln(`lista1 ${vetorA}`)
-document.writeln(`lista2 ${vetorB}`)
-document.writeln(`lista mesclada ${vetorC}`)
+document.writeln(`<span>lista1 ${vetorA}</span>`)
+document.writeln(`<span>lista2 ${vetorB}</span>`)
+document.writeln(`<span>lista mesclada ${vetorC}</span>`)

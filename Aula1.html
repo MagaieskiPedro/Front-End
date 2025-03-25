@@ -31,19 +31,19 @@
     //     document.write(`Sinto muito, vc vai ter que repetir o ano pois tem média: ${media}`)
     // }
     //for - quando sei quantas iterações terão
-    document.writeln(`<p>`)
+    document.writeln(`<span></span>`)
     for(i=0;i <=10;i++){
-        document.write(`<br> Número ${i}`)
+        document.write(`<span> Número ${i}</span>`)
     }
     let contador = 10
     //while - regido pelo condicional
     while(contador >=0){
-        document.write(`<br> Número caindo: ${contador}`)
+        document.write(`<span> Número caindo: ${contador}</span>`)
         contador--
     }
     //do while - uma iteração obrigatoria e depois a condicional
     do{
-        document.write(`<br> Número subindo: ${contador+1}`)
+        document.write(`<span> Número subindo: ${contador+1}</span>`)
         contador++
     }while(contador <10)    
     </script>

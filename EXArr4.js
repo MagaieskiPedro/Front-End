@@ -6,7 +6,7 @@ for(i=0;i<10;i++){
 }
 let filtroPares  = parouimpar.filter(par = (nu) => nu%2 ===0)
 if(filtroPares.length <= 0){
-    document.writeln('todos os numeros são impares <p>')
+    document.writeln('<span>todos os numeros são impares </span>')
 }else{
-    document.writeln(`${filtroPares} são os pares <p>` )
+    document.writeln(`<span>${filtroPares} são os pares </span>` )
 }

@@ -13,4 +13,4 @@ for(let valor of valores){
         valoresMedia.push(valor)
     }
 }
-document.writeln(`lista [${valores}] media [${media}] valores acima media [${valoresMedia}] <p>`)
+document.writeln(`<span>lista [${valores}] media [${media}] valores acima media [${valoresMedia}] </span>`)

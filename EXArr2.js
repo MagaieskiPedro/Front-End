@@ -4,5 +4,5 @@ let total = 0
 for(let valores of notas){
     total+=valores
 }
-document.writeln(`${notas} são as notas <p>`)
-document.writeln(`${total/8} é a média <p>`)
+document.writeln(`<span>${notas} são as notas </span>`)
+document.writeln(`<span>${total/8} é a média </span>`)
