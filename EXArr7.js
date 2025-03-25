@@ -1,18 +1,25 @@
 //EX7
-let nomes = ["joão","maria","carlos","carla","julio","julia","marcos","mariana","lulu","luana"]
-let confirma = 0
+let nomes = ["joão","maria","carlos","carla","julio","julia","marcos","mariana","lulu","luana"];
+let confirma = 0;
 let tentativas = 5;
 
-let comparar = window.prompt("Digite um nome para procurar na lista de nomes: ")
-do{
-    nomes.forEach(nome => {
-        if(nome === comparar){
-            document.writeln(`<span>${nome} = ${comparar}</span>`)
-            confirma = 1
-        }else{
-            window.alert("Nome não encontrado")
-            tentativas -=1
+let nome = window.prompt("Digite um nome para procurar na lista de nomes: ");
+
+while(confirma != 1 && tentativas >=1){
+    for(i=0;i<10;i++){
+        if(nomes[i] === nome){
+            window.alert(`${nome} encontrado na posição ${i}`);
+            confirma = 1;
+            console.log(confirma)
+            break;
         }
-    });
-}while(confirma ==0 && tentativas >0)
+    }
+    if(confirma===0){
+        tentativas -= 1;
+        console.log(tentativas)
+    }
+}
+if(confirma===0){
+    window.alert("Nome não encontrado");
+}
 
